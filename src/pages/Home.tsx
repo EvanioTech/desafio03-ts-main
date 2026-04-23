@@ -35,7 +35,7 @@ const Home = () => {
                 <Input placeholder="password" value={password} onChange={(event) => setPassword(event.target.value)} />
                 <Center>
                     <DButton
-                        onClick={() => validateUser(email, '123456')}
+                        onClick={() => validateUser(email, password)}
                     />
                 </Center>
             </Card>

@@ -26,6 +26,11 @@ export const Header  = () => {
           <>
             <Spacer />
             <Button
+              onClick={() => navigate('/ContaInfo')}
+            >
+              
+            </Button>
+            <Button
               onClick={() => logout()}
             >
               Sair
