@@ -29,9 +29,9 @@ desenvolvido por [Nathally Souza](https://github.com/nathyts)
   - Caso os dados do usuário existam no localStorage, a tela de login não deve ser exibida
 
 [ ] Crie uma página para exibir as informações do usuário
-  - Crie uma página onde será exibido o nome, email
-  - Esta página só poderá ser acessada caso a usuária esteja logada
-  - Caso a usuária não esteja logada, deve ser mantida na página com a tela de login
-  - Escreva os testes unitários para as funções criadas ou refatoradas.
+ ok - Crie uma página onde será exibido o nome, email
+ ok - Esta página só poderá ser acessada caso a usuária esteja logada
+ ok - Caso a usuária não esteja logada, deve ser mantida na página com a tela de login
+  ok - Escreva os testes unitários para as funções criadas ou refatoradas.
 
 [ ] Fazer o deploy no Netlify e compartilhar o link da página
