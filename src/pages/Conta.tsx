@@ -44,7 +44,7 @@ const Conta = () => {
                     userData === undefined || userData === null ?
                     (  
                         <Center>
-                            <Spinner size='xl' color='white'/>
+                            <Spinner size="xl" color="orange.500" />
                         </Center>
                     ) : 
                     (

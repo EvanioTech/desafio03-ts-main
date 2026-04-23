@@ -3,6 +3,8 @@ import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { changeLocalStorage } from '../services/storage'
 import { AppContext } from './AppContext'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Header  = () => {
   const { isLoggedIn, setIsLoggedIn } = useContext(AppContext)
@@ -12,6 +14,10 @@ export const Header  = () => {
     changeLocalStorage({ login: false})
     setIsLoggedIn(false)
     navigate('/')
+  }
+
+  const info = () => {
+    navigate('/infoconta')
   }
 
   return(
@@ -26,9 +32,9 @@ export const Header  = () => {
           <>
             <Spacer />
             <Button
-              onClick={() => navigate('/ContaInfo')}
+              onClick={() => info()} marginRight={2}
             >
-              
+              <FontAwesomeIcon icon={faUser} />
             </Button>
             <Button
               onClick={() => logout()}
