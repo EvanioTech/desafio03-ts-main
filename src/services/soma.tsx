@@ -1,4 +1,4 @@
-import { info } from "console"
+
 
 export const soma = (num: number): number => {
     return num + 1

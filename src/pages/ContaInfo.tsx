@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react"
-import { useNavigate, useParams } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { api } from "../api"
 import { AppContext } from "../components/AppContext"
 
@@ -21,7 +21,6 @@ interface UserData {
 
 const ContaInfo = () => { 
     const [ userData, setUserData ] = useState<null | UserData>()
-    const { id } = useParams()
     const navigate = useNavigate()
 
     const { isLoggedIn } = useContext(AppContext)
